@@ -1,10 +1,10 @@
 header {
   margin-top: 0px;
-  background-color: rgb(65, 242, 248);
+  background-color: rgb(44, 151, 238);
   font-size: 2rem;
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
