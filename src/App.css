@@ -2,18 +2,31 @@ main {
   color: rgb(16, 93, 235);
   background-color: rgb(239, 227, 240);
   padding-left: 10px;
-  height: 530px;
+  height: fit-content;
   margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
 }
 
-#mainHeader {
-  margin-top: 0px;
+.descriptionText {
+  text-align: center;
+}
+
+.container-fluid {
+  width: 400px;
 }
 
 img {
   width: 400px;
   height: 200px;
-  margin-left: 30%;
+}
+
+.footerElements {
+  text-align: center;
 }
 
 img:hover {
@@ -24,4 +37,8 @@ img:hover {
 .red {
   color: red;
   font-size: 25px;
+}
+
+footer {
+  text-transform: capitalize;
 }
