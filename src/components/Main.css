@@ -1,0 +1,31 @@
+main {
+  height: fit-content;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+div h2 {
+  margin-top: 0px;
+  display: flex;
+  margin-left: 40%;
+  align-items: center;
+}
+
+div .flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+div .flex p {
+  padding-left: 35%;
+}
+
+.flex img {
+  width: 500px;
+  height: 300px;
+}

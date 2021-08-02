@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Footer.css';
 class Footer extends React.Component {
   render() {
     return (
@@ -7,7 +7,7 @@ class Footer extends React.Component {
         all rights reserved &copy; Yazan Alkharabsheh
       </footer>
     );
-  };
+  }
 }
 
 export default Footer;
