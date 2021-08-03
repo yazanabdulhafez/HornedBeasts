@@ -1,25 +1,27 @@
 import React from 'react';
 import HornedBeasts from './HornedBeasts';
-import BeastPictuers from './assets/data.json';
-import { Container, Col, Row } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import BeastImages from './data.json';
 
 class Main extends React.Component {
   render() {
     return (
       <main>
-        <Container fluid>
-          <Row fluid='md'>
-            {BeastPictuers.map((beast, idx) => (
-              <Col key={idx}>
+        <Row >
+          {
+            BeastImages.map((item, index) => {
+              return (
                 <HornedBeasts
-                  img_source={beast.image_url}
-                  title={beast.title}
-                  description={beast.description}
+                  key={index}
+                  img_source={item.image_url}
+                  title={item.title}
+                  description={item.description}
+                  modal={this.props.wantedModal}
                 />
-              </Col>
-            ))}
-          </Row>
-        </Container>
+              );
+            })
+          }
+        </Row>
       </main>);
   }
 }
