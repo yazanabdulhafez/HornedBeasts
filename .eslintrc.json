@@ -1,6 +1,7 @@
 {
   "parser": "babel-eslint",
-  "extends": "eslint:recommended",
+  "extends":["eslint:recommended",
+  "plugin:react/recommended"],
   "parserOptions": {
     "ecmaVersion": 8,
     "sourceType": "module"
@@ -11,6 +12,7 @@
     "node": true
   },
   "rules": {
+    
     "eol-last": "error",
     "eqeqeq": [
       "error",

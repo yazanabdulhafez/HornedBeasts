@@ -108,3 +108,15 @@ Start time: 2 Aug 2021 - 10:40
 Finish time: 2 Aug 2021 - 11:30
 
 Actual time needed to complete: 50 min.
+
+-------------------------------------------------------------
+
+### Feature(4): Display a Modal
+
+Estimate of time needed to complete: 30 min
+
+Start time: 3 Aug 2021 - 7:00
+
+Finish time: 3 Aug 2021 -10:30
+
+Actual time needed to complete:3.5 hours.
