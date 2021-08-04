@@ -2,7 +2,7 @@ main {
   color: rgb(16, 93, 235);
   background-color: rgb(239, 227, 240);
   padding-left: 10px;
-  height: fit-content;
+  height: max-content;
   margin-top: 0px;
   display: flex;
   flex-direction: row;
@@ -10,6 +10,11 @@ main {
   justify-content: center;
   align-items: center;
   padding-top: 20px;
+}
+
+.row {
+  gap: 20px;
+  justify-content: center;
 }
 
 .descriptionText {
@@ -29,10 +34,11 @@ img {
   text-align: center;
 }
 
-img:hover {
+
+/* img:hover {
   transform: scale(1.1);
   transition: linear;
-}
+} */
 
 .red {
   color: red;
