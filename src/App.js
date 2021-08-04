@@ -4,6 +4,8 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 import React from 'react';
 import SelectedBeast from './components/SelectedBeast ';
+
+
 class App extends React.Component {
   constructor(props) {
     super(props);
