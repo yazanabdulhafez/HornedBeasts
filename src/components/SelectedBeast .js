@@ -1,6 +1,6 @@
 import React from 'react';
-import {Card,Modal,Button} from 'react-bootstrap';
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Card, Modal, Button } from 'react-bootstrap';
+
 
 class SelectedBeast extends React.Component {
   render() {
@@ -11,16 +11,19 @@ class SelectedBeast extends React.Component {
             <Modal.Title>{this.props.modalData.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <Card style={{ height: '250px' }}>
-           <Card.Img src={this.props.modalData.img_source}
-            alt={this.props.modalData.title}
-          />
-          <Card.Body>
-          <Card.Text className="descriptionText">
-            {this.props.modalData.description}
-          </Card.Text>
-        </Card.Body>
-          </Card>
+
+            <Card>
+              <Card.Img src={this.props.modalData.img_source}
+                alt={this.props.modalData.title}
+              />
+              <Card.Body>
+                <Card.Text className="descriptionText">
+                  {this.props.modalData.description}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+
+
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={this.props.handleClose}>

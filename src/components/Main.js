@@ -14,19 +14,22 @@ filterState:BeastImages
 
 
 
- filterItem = (categItem) => {
+ filterItem = (selctedItem) => {
    console.log('hello');
-   console.log('cate'+categItem);
-   if (categItem==='All'){
+   console.log('cate'+selctedItem);
+   if (selctedItem==='All'){
     this.setState({
       filterState:BeastImages
      
     });
    }else{
-     console.log(BeastImages)
-    let updatedItems = BeastImages.filter((Elemement) => {
-       return Elemement.horns === categItem;
-    });
+     console.log(BeastImages);
+   let updatedItems = BeastImages.filter((elem) =>{
+      // console.log(typeof(elem));
+      // console.log(typeof(elem.horns));
+      // console.log(typeof(categItem));
+    return elem.horns === Number(selctedItem)});
+
     console.log(updatedItems);
     this.setState({
       filterState:updatedItems
