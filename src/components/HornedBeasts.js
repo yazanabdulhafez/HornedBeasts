@@ -16,14 +16,17 @@ class HornedBeasts extends React.Component {
 
   render() {
     return (
-      <Card bg='info' style={{ width: '18rem' }}>
-         <Card.Header closeButton>
+
+   
+
+      <Card bg='info' text='dark' style={{ width: '18rem' }}>
+            <Card.Header closeButton>
             <Card.Title>{this.props.title}</Card.Title>
           </Card.Header>
         <Card.Img onClick={this.addNewVote}
           variant='top'
           src={this.props.img_source} />
-        <Card.Body>
+        <Card.Body >
           <Card.Text className="descriptionText">
             {this.props.description}
           </Card.Text>
