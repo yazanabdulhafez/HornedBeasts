@@ -16,7 +16,7 @@ class HornedBeasts extends React.Component {
 
   render() {
     return (
-      <Card style={{ width: '18rem' }}>
+      <Card bg='info' style={{ width: '18rem' }}>
          <Card.Header closeButton>
             <Card.Title>{this.props.title}</Card.Title>
           </Card.Header>
